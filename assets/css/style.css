@@ -13,6 +13,8 @@
   background-color: #ffc017;
   border-bottom: 1px solid black;
   padding: 22px;
+  position: sticky;
+  top: 0px;
 }
 .black-dot1 {
   background-color: black;
@@ -69,7 +71,6 @@ h1 {
   border-bottom: 1px solid black;
   padding: 5% 8%;
 }
-/* FINE UNDER HEADER */
 .under-header h2 {
   font-size: 7em;
 }
@@ -89,4 +90,112 @@ h1 {
   padding: 8px 40px;
   font-size: 1.3em;
   margin-top: 2%;
+}
+/* FINE UNDER HEADER */
+main {
+  margin-inline: 8%;
+}
+/*.section1 {
+  border-bottom: 1px solid black;
+}*/
+/* TRENDING ON MEDIUM */
+.trending {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+.trend-txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100vh;
+  margin-top: 5%;
+}
+.card-trending {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin-bottom: 2%;
+}
+.card-trending img {
+  width: 27px;
+  border-radius: 50%;
+}
+.trending h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.card-trending p:nth-of-type(1) {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #e7e6e6;
+  font-size: 2.5em;
+  transform: translateX(-40px);
+}
+.data-post {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+#jpeg1 {
+  width: 27px;
+}
+#jpeg3 {
+  width: 27px;
+}
+.end-section-1 {
+  width: 140%;
+  height: 1px;
+  background-color: black;
+  transform: translateX(-150px);
+}
+
+/* INIZIO SEZIONE 2*/
+
+.sticky-discover {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.preferencies {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+  gap: 20px;
+}
+.info {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  border-top: 1px solid black;
+  padding-top: 3%;
+  gap: 6%;
+  color: #6d6c6b;
+}
+.info span {
+  padding: 1%;
+}
+.sticky-discover h2 {
+  padding-block: 5% 2%;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+}
+.preferencies p {
+  color: #6d6c6b;
+  border: 1px solid #6d6c6b84;
+  padding: 2%;
 }
