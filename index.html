@@ -9,15 +9,14 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="black-dot1"></div>
-      <div class="black-dot2"></div>
-      <div class="black-dot3"></div>
-      <h1>Medium</h1>
-      <p>Our Story</p>
-      <p>Membership</p>
-      <p>Write</p>
-      <p>Sign In</p>
-      <button>Get Started</button>
+      <img src="assets/imgs/svg/logo.svg" alt="logo" />
+      <div class="info-navbar">
+        <p>Our Story</p>
+        <p>Membership</p>
+        <p>Write</p>
+        <p>Sign In</p>
+        <button>Get Started</button>
+      </div>
     </div>
     <header>
       <div class="under-header">
@@ -31,7 +30,7 @@
     </header>
 
     <main>
-      <section class="section1">
+      <section>
         <div class="trend-txt">
           <img src="assets/imgs/svg/trending.svg" alt="trending-logo" />
           <h2>TRENDING ON MEDIUM</h2>
@@ -165,11 +164,13 @@
             <span>Oct 27 &middot; </span> <span>5 min read &middot;</span>
             <span class="categories"> Aging</span>
             <img class="star" src="assets/imgs/svg/star.svg" alt="star" />
-            <img
-              class="bookmark"
-              src="assets/imgs/svg/bookmark.svg"
-              alt="bookmark"
-            />
+            <div class="bookmark-div">
+              <img
+                class="bookmark"
+                src="assets/imgs/svg/bookmark.svg"
+                alt="bookmark"
+              />
+            </div>
           </div>
           <div class="img-post">
             <img src="assets/imgs/image08.jpeg" alt="Family" />
@@ -315,5 +316,31 @@
         </div>
       </section>
     </main>
+    <script>
+      //DA RIVEDERE
+      /*window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        const headerHeight = header.offsetHeight;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > headerHeight) {
+          header.classList.add("scroll-header");
+        } else {
+          header.classList.remove("scroll-header");
+        }*/
+
+      /*
+        const underHeader = document.getElementsByClassName("under-header");
+
+      header.addEventListener("scroll", function () {
+        const scrollPosition = underHeader.scrollY();
+
+        if (scrollPosition > 0) {
+          underHeader.classList.add("scroll-header ");
+        } else {
+          underHeader.classList.remove("scroll-header ");
+        }
+      });*/
+    </script>
   </body>
 </html>

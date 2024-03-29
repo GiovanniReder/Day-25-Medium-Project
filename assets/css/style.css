@@ -10,58 +10,33 @@ body {
 
 /* INIZIO NAVBAR */
 header {
-  height: 100%;
+  height: auto;
+}
+.scroll-header {
+  background-color: #ffffff;
 }
 .navbar {
   display: flex;
-  justify-content: space-around;
   background-color: #ffc017;
   border-bottom: 1px solid black;
   padding: 22px;
   position: sticky;
   top: 0;
   z-index: 999;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.black-dot1 {
-  background-color: black;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  transform: translateX(50px);
-}
-.black-dot2 {
-  background-color: black;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
 
-  transform: translateX(-55px) rotateY(60deg);
+.navbar img {
+  display: flex;
+  margin-left: 7%;
 }
-.black-dot3 {
-  background-color: black;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  transform: translateX(-169px) rotateY(80deg);
-}
-h1 {
-  font-family: "Spectral", serif;
-  font-weight: 700;
-  font-style: normal;
-  transform: translateX(-265px) translateY(-4px);
-  font-size: 2.6em;
-}
-.navbar p:nth-of-type(1) {
-  transform: translateX(233px) translateY(12px);
-}
-.navbar p:nth-of-type(2) {
-  transform: translateX(154px) translateY(12px);
-}
-.navbar p:nth-of-type(3) {
-  transform: translateX(73px) translateY(12px);
-}
-.navbar p:nth-of-type(4) {
-  transform: translateX(-11px) translateY(12px);
+.info-navbar {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-right: 7%;
 }
 .navbar button {
   color: white;
@@ -69,7 +44,6 @@ h1 {
   border-radius: 20px;
   border: 1px solid black;
   padding: 10px;
-  transform: translateX(-90px);
 }
 /* FINE NAVBAR */
 /* INIZIO UNDER HEADER */
@@ -77,6 +51,7 @@ h1 {
   background-color: #ffc017;
   border-bottom: 1px solid black;
   padding: 5% 8%;
+  height: 55%0;
 }
 .under-header h2 {
   font-size: 7em;
@@ -165,15 +140,16 @@ main {
 }
 
 /* INIZIO SEZIONE STICKY*/
-
+section {
+  display: inline;
+}
 .sticky-discover {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-
   flex-wrap: wrap;
   position: sticky;
-  top: 500px;
+  top: 100px;
   z-index: 998;
   float: right;
   width: 33%;
@@ -266,11 +242,4 @@ main {
 }
 .img-post img {
   width: 33%;
-}
-.star {
-  transform: translateY(10px);
-}
-.bookmark {
-  transform: translate(250px, 10px);
-  display: flex;
 }
