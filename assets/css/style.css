@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+/* SPECTRAL FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/*ROBOTO FONT  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* INIZIO NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  padding: 22px;
+}
+.black-dot1 {
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(50px);
+}
+.black-dot2 {
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  transform: translateX(-36px) rotateY(60deg);
+}
+.black-dot3 {
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-134px) rotateY(80deg);
+}
+h1 {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+  transform: translateX(-220px) translateY(-4px);
+  font-size: 2.6em;
+}
+.navbar p:nth-of-type(1) {
+  transform: translateX(210px) translateY(12px);
+}
+.navbar p:nth-of-type(2) {
+  transform: translateX(160px) translateY(12px);
+}
+.navbar p:nth-of-type(3) {
+  transform: translateX(103px) translateY(12px);
+}
+.navbar p:nth-of-type(4) {
+  transform: translateX(50px) translateY(12px);
+}
+.navbar button {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+/* FINE NAVBAR */
+/* INIZIO UNDER HEADER */
+.under-header {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  padding: 5% 8%;
+}
+/* FINE UNDER HEADER */
+.under-header h2 {
+  font-size: 7em;
+}
+.under-header p {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
+  margin-block: 2%;
+  max-width: 39%;
+}
+.under-header button {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 8px 40px;
+  font-size: 1.3em;
+  margin-top: 2%;
+}
