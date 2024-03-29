@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
 }
+body {
+}
 /* SPECTRAL FONT*/
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 /*ROBOTO FONT  */
@@ -96,9 +98,7 @@ h1 {
 main {
   margin-inline: 8%;
 }
-/*.section1 {
-  border-bottom: 1px solid black;
-}*/
+
 /* TRENDING ON MEDIUM */
 .trending {
   display: flex;
@@ -159,21 +159,28 @@ main {
   transform: translateX(-150px);
 }
 
-/* INIZIO SEZIONE 2*/
+/* INIZIO SEZIONE STICKY*/
 
 .sticky-discover {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  align-content: flex-end;
+
   flex-wrap: wrap;
+  position: sticky;
+  top: 0%;
+  float: right;
+  width: 33%;
 }
 
 .preferencies {
   display: flex;
   flex-wrap: wrap;
-  max-width: 30%;
+  max-width: 85%;
   gap: 20px;
+  flex-direction: row;
+  align-content: flex-end;
+  margin-block: 1%;
 }
 .info {
   display: flex;
@@ -206,8 +213,10 @@ main {
 .cards {
   display: block;
   max-width: 60%;
-
+  margin-top: 5%;
   max-height: 200px;
+  position: relative;
+  z-index: -1;
 }
 .user {
   display: flex;
@@ -249,4 +258,10 @@ main {
 }
 .img-post img {
   width: 33%;
+}
+.star {
+  transform: translateY(10px);
+}
+.bookmark {
+  transform: translate(250px, 10px);
 }
