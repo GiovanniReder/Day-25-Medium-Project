@@ -173,8 +173,8 @@ main {
 
   flex-wrap: wrap;
   position: sticky;
-  top: 0;
-  z-index: 999;
+  top: 500px;
+  z-index: 998;
   float: right;
   width: 33%;
 }
