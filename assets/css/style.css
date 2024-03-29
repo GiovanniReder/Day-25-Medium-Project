@@ -9,6 +9,9 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* INIZIO NAVBAR */
+header {
+  height: 100%;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -16,7 +19,8 @@ body {
   border-bottom: 1px solid black;
   padding: 22px;
   position: sticky;
-  top: 0px;
+  top: 0;
+  z-index: 999;
 }
 .black-dot1 {
   background-color: black;
@@ -31,30 +35,30 @@ body {
   width: 30px;
   height: 30px;
 
-  transform: translateX(-36px) rotateY(60deg);
+  transform: translateX(-55px) rotateY(60deg);
 }
 .black-dot3 {
   background-color: black;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  transform: translateX(-134px) rotateY(80deg);
+  transform: translateX(-169px) rotateY(80deg);
 }
 h1 {
   font-family: "Spectral", serif;
   font-weight: 700;
   font-style: normal;
-  transform: translateX(-220px) translateY(-4px);
+  transform: translateX(-265px) translateY(-4px);
   font-size: 2.6em;
 }
 .navbar p:nth-of-type(1) {
-  transform: translateX(266px) translateY(12px);
+  transform: translateX(233px) translateY(12px);
 }
 .navbar p:nth-of-type(2) {
-  transform: translateX(173px) translateY(12px);
+  transform: translateX(154px) translateY(12px);
 }
 .navbar p:nth-of-type(3) {
-  transform: translateX(75px) translateY(12px);
+  transform: translateX(73px) translateY(12px);
 }
 .navbar p:nth-of-type(4) {
   transform: translateX(-11px) translateY(12px);
@@ -132,6 +136,7 @@ main {
 .trending h3 {
   font-size: 1.3em;
   font-weight: 700;
+  padding: 3%;
 }
 .card-trending p:nth-of-type(1) {
   font-family: "Spectral", serif;
@@ -168,7 +173,8 @@ main {
 
   flex-wrap: wrap;
   position: sticky;
-  top: 0%;
+  top: 0;
+  z-index: 999;
   float: right;
   width: 33%;
 }
@@ -226,6 +232,8 @@ main {
 
 .user img {
   border-radius: 50%;
+  max-width: 3%;
+  margin: 1%;
 }
 .user p {
   font-family: "Roboto", sans-serif;
@@ -264,4 +272,5 @@ main {
 }
 .bookmark {
   transform: translate(250px, 10px);
+  display: flex;
 }
