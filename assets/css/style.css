@@ -15,7 +15,7 @@ header {
 .scroll-header {
   background-color: #ffffff;
 }
-.navbar {
+#navbar {
   display: flex;
   background-color: #ffc017;
   border-bottom: 1px solid black;
@@ -26,9 +26,10 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  transition-duration: 500ms;
 }
 
-.navbar img {
+#navbar img {
   display: flex;
   margin-left: 7%;
 }
@@ -38,13 +39,14 @@ header {
   align-items: center;
   margin-right: 7%;
 }
-.navbar button {
+#btn {
   color: white;
   background-color: black;
   border-radius: 20px;
   border: 1px solid black;
   padding: 10px;
 }
+
 /* FINE NAVBAR */
 /* INIZIO UNDER HEADER */
 .under-header {
@@ -242,4 +244,8 @@ section {
 }
 .img-post img {
   width: 33%;
+}
+
+.bookmark {
+  float: right;
 }

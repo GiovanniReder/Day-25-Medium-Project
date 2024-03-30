@@ -8,14 +8,14 @@
     <title>Medium</title>
   </head>
   <body>
-    <div class="navbar">
+    <div id="navbar">
       <img src="assets/imgs/svg/logo.svg" alt="logo" />
       <div class="info-navbar">
         <p>Our Story</p>
         <p>Membership</p>
         <p>Write</p>
         <p>Sign In</p>
-        <button>Get Started</button>
+        <button id="btn">Get Started</button>
       </div>
     </div>
     <header>
@@ -259,27 +259,30 @@
 
         <!-- QUINTA CARD -->
 
-        <div class="cards">
-          <div class="user">
-            <img src="assets/imgs/image15.jpeg" alt="" />
-            <p>Robert Roy Britt</p>
+        <div class="container-cards">
+          <div class="cards">
+            <div class="user">
+              <img src="assets/imgs/image15.jpeg" alt="" />
+              <p>Robert Roy Britt</p>
+            </div>
+            <h3>Variability, Not Repetition, is the Key to Mastery</h3>
+            <p class="post-txt">
+              Bruce Lee is reported to have said, "I fear not the man who has
+              practiced 10,000 kicks once, but the man who has practiced one
+              kick for 10,000 times"
+            </p>
+            <div class="starbox">
+              <span>Oct 27 &middot; </span> <span>5 min read &middot;</span>
+              <span class="categories"> Aging</span>
+              <img class="star" src="assets/imgs/svg/star.svg" alt="star" />
+              <img
+                class="bookmark"
+                src="assets/imgs/svg/bookmark.svg"
+                alt="bookmark"
+              />
+            </div>
           </div>
-          <h3>Variability, Not Repetition, is the Key to Mastery</h3>
-          <p class="post-txt">
-            Bruce Lee is reported to have said, "I fear not the man who has
-            practiced 10,000 kicks once, but the man who has practiced one kick
-            for 10,000 times"
-          </p>
-          <div class="starbox">
-            <span>Oct 27 &middot; </span> <span>5 min read &middot;</span>
-            <span class="categories"> Aging</span>
-            <img class="star" src="assets/imgs/svg/star.svg" alt="star" />
-            <img
-              class="bookmark"
-              src="assets/imgs/svg/bookmark.svg"
-              alt="bookmark"
-            />
-          </div>
+
           <div class="img-post">
             <img src="assets/imgs/image16.jpg" alt="Bruce Lee" />
           </div>
@@ -317,30 +320,21 @@
       </section>
     </main>
     <script>
-      //DA RIVEDERE
-      /*window.addEventListener("scroll", function () {
+      window.addEventListener("scroll", function () {
         const header = document.querySelector("header");
+        const navbar = document.getElementById("navbar");
         const headerHeight = header.offsetHeight;
         const scrollPosition = window.scrollY;
+        const button = document.getElementById("btn");
 
         if (scrollPosition > headerHeight) {
-          header.classList.add("scroll-header");
+          navbar.style.backgroundColor = "white";
+          button.style.backgroundColor = "green";
         } else {
-          header.classList.remove("scroll-header");
-        }*/
-
-      /*
-        const underHeader = document.getElementsByClassName("under-header");
-
-      header.addEventListener("scroll", function () {
-        const scrollPosition = underHeader.scrollY();
-
-        if (scrollPosition > 0) {
-          underHeader.classList.add("scroll-header ");
-        } else {
-          underHeader.classList.remove("scroll-header ");
+          navbar.style.backgroundColor = "#ffc017";
+          button.style.backgroundColor = "black";
         }
-      });*/
+      });
     </script>
   </body>
 </html>
