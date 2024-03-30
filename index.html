@@ -18,15 +18,30 @@
         <button id="btn">Get Started</button>
       </div>
     </div>
+
     <header>
-      <div class="under-header">
-        <h2>Stay curious</h2>
-        <p>
-          Discover stories, thinking, and expertise from writers of any topic
-        </p>
-        <button>Start reading</button>
+      <div class="container" style="display: inline-block">
+        <div class="under-header" style="display: inline-block; width: 59%">
+          <h2>Stay curious</h2>
+          <p>
+            Discover stories, thinking, and expertise from writers of any topic
+          </p>
+          <button>Start reading</button>
+        </div>
+        <div class="M" style="display: inline-block; width: 39%">
+          <p id="m-array">
+            <!-- M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M M
+            M M -->
+          </p>
+        </div>
       </div>
-      <div class="M"></div>
     </header>
 
     <main>
@@ -319,22 +334,6 @@
         </div>
       </section>
     </main>
-    <script>
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        const navbar = document.getElementById("navbar");
-        const headerHeight = header.offsetHeight;
-        const scrollPosition = window.scrollY;
-        const button = document.getElementById("btn");
-
-        if (scrollPosition > headerHeight) {
-          navbar.style.backgroundColor = "white";
-          button.style.backgroundColor = "green";
-        } else {
-          navbar.style.backgroundColor = "#ffc017";
-          button.style.backgroundColor = "black";
-        }
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

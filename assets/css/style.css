@@ -11,6 +11,8 @@ body {
 /* INIZIO NAVBAR */
 header {
   height: auto;
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
 }
 .scroll-header {
   background-color: #ffffff;
@@ -18,7 +20,7 @@ header {
 #navbar {
   display: flex;
   background-color: #ffc017;
-  border-bottom: 1px solid black;
+
   padding: 22px;
   position: sticky;
   top: 0;
@@ -46,12 +48,20 @@ header {
   border: 1px solid black;
   padding: 10px;
 }
+/*M.JPEG*/
+.M {
+  display: inline-block;
+}
+.M p {
+  font-size: 1.4em;
+  margin-right: auto;
+}
 
 /* FINE NAVBAR */
 /* INIZIO UNDER HEADER */
 .under-header {
   background-color: #ffc017;
-  border-bottom: 1px solid black;
+
   padding: 5% 8%;
   height: 55%0;
 }
@@ -247,5 +257,5 @@ section {
 }
 
 .bookmark {
-  float: right;
+  /* float: right; */
 }
